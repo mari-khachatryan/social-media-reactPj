@@ -1,0 +1,46 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "name": "Mariam"
+        },
+        {
+            "id": 2,
+            "name": "Vigen"
+        },
+        {
+            "id": 3,
+            "name": "Narek"
+        },
+        {
+            "id": 4,
+            "name": "Sirak"
+        }
+    ],
+    "messages": [
+        {
+            "id": "2",
+            "author": "Vigen",
+            "date": "13/07/2021",
+            "text": "Have you ever thought about living in another country"
+        },
+        {
+            "id": "3",
+            "author": "Mariam",
+            "date": "13/07/2021",
+            "text": "Hey men, when can you come to hang over? I'll be free today"
+        },
+        {
+            "id": "4",
+            "author": "Sirak",
+            "date": "24/05/2022",
+            "text": "Hi, maybe I'll be free after work today"
+        },
+        {
+            "id": "5",
+            "author": "Narek",
+            "date": "02/06/2018",
+            "text": "My car is in service senter today, I cann't visit you"
+        }
+    ]
+}
