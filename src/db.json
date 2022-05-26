@@ -72,24 +72,12 @@
             "picture": "https://media.cntraveler.com/photos/60596b398f4452dac88c59f8/3:2/w_3999,h_2666,c_limit/MtFuji-GettyImages-959111140.jpg"
           },
           {
-            "id": 1,
+            "id": 4,
             "title": "json-server",
             "author": "Aram",
             "coment": "Nature is life itself",
             "picture": "https://thumbs.dreamstime.com/b/jour-de-terre-d-environnement-dans-les-mains-des-arbres-cultivant-jeunes-plantes-bokeh-verdissent-la-main-femelle-fond-tenant-l-130247647.jpg"
           }
-        ],
-
-     "comments": [
-          {
-            "id": 1,
-            "body": "some comment",
-            "postId": 1
-          }
-        ],
-       
-     "profile": {
-          "name": "typicode"
-        }
+        ]
       
 }
