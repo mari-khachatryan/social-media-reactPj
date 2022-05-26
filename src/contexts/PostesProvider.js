@@ -14,6 +14,9 @@ const PostesProvider = ({children}) => {
           .catch(err => console.log(err))
        },[])
 
+       
+
+
     return <PostesContext.Provider value={{postesData, setPostesData}}>
         {children}
     </PostesContext.Provider>
