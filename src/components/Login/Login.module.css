@@ -1,0 +1,26 @@
+.conteiner {
+    padding: 5rem 0;
+
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    max-width: 200px;
+    gap: 1rem
+}
+
+.label {
+   display: flex;
+   flex-direction: column;
+}
+
+.divLogin {
+    border: 1cm;
+    background-color: red;
+}
+
+.divPassword {
+    border: 1cm;
+    background-color: red;
+}
