@@ -2,6 +2,7 @@ import axios from "axios"
 import { useState } from "react"
 import { useForm } from "react-hook-form"
 import { useNavigate } from "react-router-dom"
+import { baseUrl } from "../../Api/Api"
 import { useAuthTab } from "../../contexts/AuthTabProvider"
 import { AUTH_TABS } from "../../helpers/constants"
 import classes from "./Login.module.css"
@@ -17,19 +18,21 @@ const Login = () => {
     const navigate = useNavigate()
 
     const onSubmit = data => {
-        //  axios.get(`${baseUr}`/users)
-        //  .then(res => {
-        //        const user =res.data.find(item => item.name === data.login && item.password === data.password)
+         axios.get(`${baseUrl}/users`)
+         .then(res => {
+               const user = res.data.find(item => item.name === data.login && item.password === data.password)
          
-        //        if(user) {
-        //            navigate('../massage')
-        //        } else {
-
-        //        }
-
-        //     })
+               if(user) {
+                   navigate('../posts')
+               } else {
+                   console.log("User is not found")
+               }
+       
+            })
+       
+        console.log("data", data)
     }
-
+   
     return (
         <div className={classes.conteiner}>
             Log into Our Soical Media
