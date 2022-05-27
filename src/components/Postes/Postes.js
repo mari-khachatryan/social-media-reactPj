@@ -14,7 +14,7 @@ const Postes = () => {
                       <div key={post.id} className={classes.postsItem}>
                           <p>{post.author}</p>
                           <p>{post.coment}</p>
-                          <p>{post.picture}</p>
+                          <p><img src={post.picture}/></p>
                       </div>
                   )
               })

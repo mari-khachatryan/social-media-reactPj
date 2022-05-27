@@ -9,12 +9,14 @@ import PostesProvider from './contexts/PostesProvider';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-       <PostesProvider>
+      
+   <BrowserRouter>
+           <PostesProvider>
                 <AuthTabContext>
                      <App />
                 </AuthTabContext>
-       </PostesProvider>
-
+           </PostesProvider>
+   </BrowserRouter>
         
 );
 
