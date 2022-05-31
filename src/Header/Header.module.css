@@ -29,3 +29,19 @@
     background-color: #fff;
     transition: all 0.3s;
 }
+
+.headerInfo {
+    display: flex;
+    gap: 2rem;
+}
+
+.logo {
+    height: 8vh;
+    width: 8vh;
+    border: 1px black solid;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}

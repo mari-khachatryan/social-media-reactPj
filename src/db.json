@@ -3,7 +3,8 @@
         {
             "id": 1,
             "name": "Mariam",
-            "password": "1111"
+            "password": "1111",
+            "posts": []
         },
         {
             "id": 2,
