@@ -5,20 +5,27 @@ import { BrowserRouter as Router, Navigate, Route, Routes } from "react-router-d
 import Main from './Main/Main';
 import Auth from './components/Auth/Auth';
 import Postes from './components/Postes/Postes';
+import Profile from './components/Profile/profile';
+import { useSelector } from 'react-redux';
+import { useState } from 'react';
 
 const App = () => {
+  const user = useSelector(state => state.user.userLogout)
+
   return (
     <div className='container'>
-         <Header />
-         <Routes>
-            <Route path='posts' element={<Postes />}/>
-            <Route path='auth' element={<Auth />}/>
-            <Route path='main' element={<Main />}/>
-            <Route path='*' to={<Navigate path="posts"/>} />
-         </Routes>
-         <Footer />
+      <Header />
+      <Routes>
+        {user && <Route path='profile' element={<Profile />} />}
+        <Route path='posts' element={<Postes />} />
+        <Route path='auth' element={<Auth />} />
+        <Route path='main' element={<Main />} />
+        <Route path='*' to={<Navigate path="posts" />} />
+      </Routes>
+      <Footer />
+
     </div>
-   
+
   );
 }
 

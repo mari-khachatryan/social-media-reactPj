@@ -7,15 +7,14 @@ import Register from "../Register/Register"
 const [LOGIN, REGISTRATION] = AUTH_TABS
 
 const authComponent = {
-     [LOGIN]: <Login />,
-     [REGISTRATION]: <Register />
+    [LOGIN]: <Login />,
+    [REGISTRATION]: <Register />
 }
 
 const Auth = () => {
-    const {authRoute} = useAuthTab()
-   
-    const MainComponent = useMemo(() => authComponent[authRoute], [authRoute])
+    const { authRoute } = useAuthTab()
 
+    const MainComponent = useMemo(() => authComponent[authRoute], [authRoute])
     return (
         <div>
             {MainComponent}
