@@ -3,22 +3,26 @@
     {
       "id": 1,
       "name": "Mariam",
-      "password": "1111"
+      "password": "1111",
+      "gender": "girl"
     },
     {
       "id": 2,
       "name": "Vigen",
-      "password": "2222"
+      "password": "2222",
+      "gender": "boy"
     },
     {
       "id": 3,
       "name": "Narek",
-      "password": "3333"
+      "password": "3333",
+      "gender": "boy"
     },
     {
       "id": 4,
       "name": "Sirak",
-      "password": "4444"
+      "password": "4444",
+      "gender": "boy"
     }
   ],
   "messages": [

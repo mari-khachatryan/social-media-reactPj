@@ -23,14 +23,14 @@ export const LINKS = [
 ]
 
 const Header = () => {
-      const LogOut = () => {
+  const LogOut = () => {
 
   }
 
   return (
     <div className={classes.headerCont}>
-       <ul className={classes.ul}>
-           {/* {
+      <ul className={classes.ul}>
+        {/* {
              LINKS.map(link => {
               <li>
                   <NavLink className={({isActive}) => classNames(classes.link, {
@@ -41,23 +41,28 @@ const Header = () => {
               </li>  
              })
            } */}
-           <li>
-               <NavLink className={({isActive}) => classNames(classes.link, {
-                 [classes.active]: isActive
-               })} to="posts" >Posts</NavLink>
-           </li>
-           <li>
-               <NavLink className={({isActive}) => classNames(classes.link, {
-                 [classes.active]: isActive
-               })} to="auth" >Auth</NavLink>
-           </li>
-           <li>
-               <NavLink className={({isActive}) => classNames(classes.link, {
-                 [classes.active]: isActive
-               })} to="main" >Main</NavLink>
-           </li>
-       </ul>
-       <button className={classes.link} onClick={LogOut}>Log out</button>
+        <li>
+          <NavLink className={({ isActive }) => classNames(classes.link, {
+            [classes.active]: isActive
+          })} to="posts" >Posts</NavLink>
+        </li>
+        <li>
+          <NavLink className={({ isActive }) => classNames(classes.link, {
+            [classes.active]: isActive
+          })} to="profile" >Profile</NavLink>
+        </li>
+        <li>
+          <NavLink className={({ isActive }) => classNames(classes.link, {
+            [classes.active]: isActive
+          })} to="auth" >Auth</NavLink>
+        </li>
+        <li>
+          <NavLink className={({ isActive }) => classNames(classes.link, {
+            [classes.active]: isActive
+          })} to="main" >Main</NavLink>
+        </li>
+      </ul>
+      <button className={classes.link} onClick={LogOut}>Log out</button>
     </div>
   );
 }
