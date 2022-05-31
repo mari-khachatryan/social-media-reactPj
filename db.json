@@ -10,16 +10,7 @@
       "id": 2,
       "name": "Vigen",
       "password": "2222",
-      "gender": "male",
-      "mail": "vigen.aghaasd",
-      "phone": "55270506",
-      "viber": "2asd",
-      "whatsApp": "dfvsd",
-      "Name": "Vigen",
-      "lastName": "Aghababyan",
-      "birthday": "asdf",
-      "work": "asdf",
-      "hobbies": "asdf"
+      "gender": "male"
     },
     {
       "id": 3,
