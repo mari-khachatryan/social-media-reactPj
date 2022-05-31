@@ -1,28 +1,35 @@
-import { useMemo } from "react"
 import { useSelector } from "react-redux"
 import classes from '../profile.module.css'
 
 const GetInfo = () => {
-   const userName = useSelector(state => state.user.userName)
+
+   const user = useSelector(state => state.user.userName)
 
    return (
-      <div className={classes.getInfo}>
-         <div>
-            <h4>Contact information</h4>
-            {userName.mail && <p>E-Mail : {userName.mail}</p>}
-            {userName.phone && <p>Phone : {userName.phone}</p>}
-            {userName.viber && <p>Viber : {userName.viber}</p>}
-            {userName.whatsApp && <p>WhatsApp : {userName.whatsApp}</p>}
+      <div>
+         <div className={classes.useName}>
+            <span>{user?.Name}</span>
+            <span>{user?.lastName}</span>
          </div>
-         <div>
-            <h4>General data</h4>
-            {userName.Name && <p>Name : {userName.Name}</p>}
-            {userName.lastName && <p>Last name : {userName.lastName}</p>}
-            {userName.year && <p>Year : {userName.year}</p>}
-            {userName.gender && <p>Gender : {userName.gender}</p>}
-            {userName.work && <p>Place of work : {userName.work}</p>}
-            {userName.hobbies && <p>Hobbies : {userName.hobbies}</p>}
 
+         <div className={classes.getInfo}>
+            <div>
+               <h4>Contact information</h4>
+               {user.mail && <p>E-Mail : {user.mail}</p>}
+               {user.phone && <p>Phone : {user.phone}</p>}
+               {user.viber && <p>Viber : {user.viber}</p>}
+               {user.whatsApp && <p>WhatsApp : {user.whatsApp}</p>}
+            </div>
+            <div>
+               <h4>General data</h4>
+               {user.Name && <p>Name : {user.Name}</p>}
+               {user.lastName && <p>Last name : {user.lastName}</p>}
+               {user.year && <p>Year : {user.year}</p>}
+               {user.gender && <p>Gender : {user.gender}</p>}
+               {user.work && <p>Place of work : {user.work}</p>}
+               {user.hobbies && <p>Hobbies : {user.hobbies}</p>}
+
+            </div>
          </div>
       </div>
    )

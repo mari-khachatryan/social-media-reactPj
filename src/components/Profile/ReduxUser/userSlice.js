@@ -4,6 +4,7 @@ const initialState = {
    userName: '',
    userPhoto: null,
    userStatus: 'Hello',
+   userLogout: 'user'
 
 }
 
@@ -20,10 +21,13 @@ const userSlice = createSlice({
       },
       setStatus: (state, { payload }) => {
          state.userStatus = payload
+      },
+      setUserLogout: (state, { payload }) => {
+         state.userLogout = payload
       }
    }
 })
 
-export const { setUserName, setUserPhoto, setStatus } = userSlice.actions
+export const { setUserName, setUserPhoto, setStatus, setUserLogout } = userSlice.actions
 
 export default userSlice.reducer

@@ -4,25 +4,28 @@
       "id": 1,
       "name": "Mariam",
       "password": "1111",
-      "gender": "girl"
+      "gender": "female"
     },
     {
       "id": 2,
       "name": "Vigen",
       "password": "2222",
-      "gender": "boy"
+      "gender": "male",
+      "mail": "vigen.aghaasd",
+      "phone": "55270506",
+      "viber": "2asd",
+      "whatsApp": "dfvsd",
+      "Name": "Vigen",
+      "lastName": "Aghababyan",
+      "birthday": "asdf",
+      "work": "asdf",
+      "hobbies": "asdf"
     },
     {
       "id": 3,
       "name": "Narek",
       "password": "3333",
-      "gender": "boy"
-    },
-    {
-      "id": 4,
-      "name": "Sirak",
-      "password": "4444",
-      "gender": "boy"
+      "gender": "male"
     }
   ],
   "messages": [

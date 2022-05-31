@@ -7,9 +7,10 @@ import Auth from './components/Auth/Auth';
 import Postes from './components/Postes/Postes';
 import Profile from './components/Profile/profile';
 import { useSelector } from 'react-redux';
+import { useState } from 'react';
 
 const App = () => {
-  const user = useSelector(state => state.user.userName)
+  const user = useSelector(state => state.user.userLogout)
 
   return (
     <div className='container'>

@@ -5,7 +5,6 @@ import classes from '../profile.module.css'
 import axios from "axios"
 import { baseUrl } from "../../../Api/Api"
 import setInfo from '../ReduxUser/userSlice'
-import ProfileIMG from "../ProfileChangePhoto/changePhoto"
 import ProfileStatus from "../ProfileStatus/profileStatus"
 
 const ProfileInfo = () => {

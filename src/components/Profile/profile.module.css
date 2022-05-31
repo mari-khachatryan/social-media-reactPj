@@ -41,8 +41,8 @@
 }
 
 .btnInfo {
-   margin-left: 15rem;
-   width: 10rem;
+   margin-left: 6rem;
+   width: 9rem;
 }
 
 .label {
@@ -53,6 +53,14 @@
 .getInfo {
    display: flex;
    justify-content: space-around;
+}
+
+.useName {
+   text-align: center;
+}
+
+.useName span {
+   margin-left: 1rem;
 }
 
 .contInfo {
@@ -67,7 +75,6 @@
 .genData {
    margin: 0 7rem;
 }
-
 
 .form {
    position: relative;

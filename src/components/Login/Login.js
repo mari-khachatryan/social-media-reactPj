@@ -5,16 +5,20 @@ import { useDispatch } from "react-redux"
 import { useNavigate } from "react-router-dom"
 import { baseUrl } from "../../Api/Api"
 import { useAuthTab } from "../../contexts/AuthTabProvider"
+import { useUserInfo } from "../../contexts/UserProvider"
 import { AUTH_TABS } from "../../helpers/constants"
 import { setUserName } from "../Profile/ReduxUser/userSlice"
 import classes from "./Login.module.css"
 
+
 const [, REGISTRATION] = AUTH_TABS
 
 const Login = () => {
-    const [isLoginFailed, setIisLoginFailed] = useState(false)
+    const [isLoginFailed, setIsLoginFailed] = useState(false)
     const { setAuthRoute } = useAuthTab()
+    const { setUser } = useUserInfo()
     const { register, handleSubmit, formState: { errors } } = useForm()
+
     const navigate = useNavigate()
     const dispatch = useDispatch()
 
@@ -24,9 +28,16 @@ const Login = () => {
                 const user = res.data.find(item => item.name === data.login && item.password === data.password)
 
                 if (user) {
-                    navigate('../posts')
                     dispatch(setUserName(user))
+                    if (data.save) {
+                        localStorage.setItem('user', data.login)
+                    } else {
+                        sessionStorage.setItem('user', data.login)
+                    }
+                    setUser(data.login)
+                    navigate('../posts')
                 } else {
+                    setIsLoginFailed(true)
                     console.log("User is not found")
                 }
             })
@@ -44,15 +55,19 @@ const Login = () => {
                     </div>
 
                 </label>
-
                 <label className={classes.label}>
                     PASSWORD
                     <input {...register('password', { required: true })} type='password' />
                     <div className={classes.divPassword}>{errors?.password?.type && "No password"}</div>
                 </label>
 
+                <label className={classes.rememberMe}>
+                    <input type="checkbox" {...register('save')} />
+                    Remember me
+                </label>
                 <button type="submit">LOG IN</button>
             </form>
+
             {(isLoginFailed || (errors.login || errors.password)) &&
                 <button onClick={() => setAuthRoute(REGISTRATION)}>Create New Account/go to register</button>}
         </div>
