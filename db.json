@@ -19,6 +19,12 @@
       "gender": "male"
     },
     {
+      "id": 2,
+      "name": "Vigen",
+      "password": "2222",
+      "gender": "male"
+    },
+    {
       "id": 3,
       "name": "Narek",
       "password": "3333",

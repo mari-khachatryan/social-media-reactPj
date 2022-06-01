@@ -16,6 +16,7 @@ const Postes = () => {
     }
     const countPlus = (id) => {
         let count = postesData?.find((e) => (e.id == id));
+
         count.count++
         setPostesData([...postesData])
     }
@@ -36,6 +37,7 @@ const Postes = () => {
                 />
             </div>
             <button onClick={() => addPost()}>Post</button>
+
             <main>
                 {
                     postesData?.map(post => {
@@ -47,6 +49,7 @@ const Postes = () => {
                                 <div className={classes.likes}>
                                     <img src="https://w7.pngwing.com/pngs/394/403/png-transparent-heart-shape-love-heart-love-heart-shape.png" className={classes.srtik} onClick={() => { countPlus(post.id) }} />
                                     <p>{post.count}</p>
+
                                 </div>
                             </div>
                         )
