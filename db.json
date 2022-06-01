@@ -47,6 +47,13 @@
       "gender": "female",
       "age": "19",
       "id": 9
+    },
+    {
+      "name": "Petros",
+      "password": "1111",
+      "gender": "male",
+      "age": "22",
+      "id": 10
     }
   ],
   "messages": [

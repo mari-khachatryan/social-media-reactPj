@@ -50,13 +50,13 @@ const Login = () => {
                 <label className={classes.label}>
                    LOG IN 
                    <div>
-                        <input {...register('login', {required: true})} type='text'/>
+                        <input {...register('login', {required: true})} placeholder="login" type='text'/>
                         <div className={classes.divLogin}>{errors?.login?.type && "No login"}</div>
                    </div>
                 </label>
                 <label className={classes.label}>
                     PASSWORD
-                    <input {...register('password', {required: true})} type='password'/>
+                    <input {...register('password', {required: true})} placeholder="password" type='password'/>
                     <div className={classes.divPassword}>{errors?.password?.type && "No password"}</div>
                 </label>
                 <label className={classes.rememberMe}>
