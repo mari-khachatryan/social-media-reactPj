@@ -4,22 +4,22 @@
       "id": 1,
       "name": "Mariam",
       "password": "1111",
-      "gender": "female",
-      "mail": "",
-      "phone": "",
-      "viber": "",
-      "whatsApp": "",
-      "Name": "",
-      "lastName": "",
-      "birthday": "",
-      "work": "",
-      "hobbies": "",
-      "status": "hi mariam"
+      "gender": "female"
     },
+
       {"id": 2,
     "name": "Vigen",
     "password": "2222",
-    "gender": "male"},
+    "gender": "male"
+  },
+
+    {
+      "id": 2,
+      "name": "Vigen",
+      "password": "2222",
+      "gender": "male"
+    },
+
     {
       "id": 3,
       "name": "Narek",
