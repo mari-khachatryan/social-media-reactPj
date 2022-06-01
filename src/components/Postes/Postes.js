@@ -21,11 +21,10 @@ const Postes = () => {
             <div>
                 <textarea
                     value={{}}
-                    onChange={{}}
                     className={classes.newPostArea}
                 />
             </div>
-            <button onClick={{}}>Post</button>
+            <button>Post</button>
             <main>
                 {
                     postesData.map(post => {

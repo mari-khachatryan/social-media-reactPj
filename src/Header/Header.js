@@ -34,7 +34,7 @@ const Header = () => {
               return null
             }
             return (
-              <li>
+              <li key={link.id}>
                 <NavLink key={link.id} className={({ isActive }) => classNames(classes.link, {
                   [classes.active]: isActive
                 })}
