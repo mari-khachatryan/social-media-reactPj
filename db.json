@@ -3,57 +3,26 @@
     {
       "id": 1,
       "name": "Mariam",
-      "password": "1111"
+      "password": "1111",
+      "gender": "female"
     },
     {
       "id": 2,
       "name": "Vigen",
-      "password": "2222"
+      "password": "2222",
+      "gender": "male"
     },
     {
       "id": 3,
       "name": "Narek",
-      "password": "3333"
+      "password": "3333",
+      "gender": "male"
     },
     {
       "id": 4,
       "name": "Sirak",
-      "password": "4444"
-    },
-    {
-      "name": "Tigran",
-      "password": "5555",
-      "id": 5
-    },
-    {
-      "name": "Sasun",
-      "password": "8888",
-      "id": 6
-    },
-    {
-      "name": "Poxos",
-      "password": "1111",
-      "id": 7
-    },
-    {
-      "name": "Hayk",
-      "password": "1111",
-      "gender": "male",
-      "id": 8
-    },
-    {
-      "name": "Hasmik",
-      "password": "1111",
-      "gender": "female",
-      "age": "19",
-      "id": 9
-    },
-    {
-      "name": "Petros",
-      "password": "1111",
-      "gender": "male",
-      "age": "22",
-      "id": 10
+      "password": "4444",
+      "gender": "male"
     }
   ],
   "messages": [
