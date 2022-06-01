@@ -10,6 +10,7 @@ import classes from '../profile.module.css'
 const { MALE, FEMALE } = GENDER
 
 const ProfileIMG = () => {
+
    const [photo, setPhoto] = useState(null)
    const userName = useSelector(state => state.user.userLogout)
    const user = useSelector(state => state.user.userName)
@@ -33,13 +34,12 @@ const ProfileIMG = () => {
       <div className={classes.profPhoto}>
          <div className={classes.profName}>
             <img className={classes.photo} src={photo || user.url || profPhoto} />
-            {/* <p>{`${userName}`}</p> */}
 
             <input type='file' id='file' onChange={photoProfile} className={classes.filePhoto} />
             <label for='file'><span>Avatar</span></label>
 
          </div>
-         <p className={classes.status}>{status}</p>
+         <p className={classes.status}>{user.status || status}</p>
 
       </div>
    )

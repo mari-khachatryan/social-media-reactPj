@@ -16,7 +16,7 @@ const ProfileStatus = () => {
 
    return (
       <div className={classes.profStatus}>
-         <input type='text' ref={changeStatus} defaultValue='hello' />
+         <input type='text' ref={changeStatus} />
          <button onClick={hendleStatue}>Change status</button>
       </div >
    )

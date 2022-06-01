@@ -18,10 +18,10 @@ const ProfileInfo = () => {
 
    const url = useSelector(state => state.user.userPhoto)
    const user = useSelector(state => state.user.userName)
-
+   const userStatus = useSelector(state => state.user.userStatus)
 
    const onSubmit = (data) => {
-
+      data.status = userStatus
       axios.patch(`${baseUrl}/users/${user.id}`, data)
       dispatch(setInfo(data))
    }
