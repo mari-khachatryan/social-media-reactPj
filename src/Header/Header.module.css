@@ -16,6 +16,10 @@
     padding: 10px;
     
 }
+.link:hover{
+    background: red;
+
+}
 
 .ul {
    display: flex;
