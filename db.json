@@ -29,6 +29,12 @@
       "name": "Narek",
       "password": "3333",
       "gender": "male"
+    },
+    {
+      "id": 4,
+      "name": "Sirak",
+      "password": "4444",
+      "gender": "male"
     }
   ],
   "messages": [
