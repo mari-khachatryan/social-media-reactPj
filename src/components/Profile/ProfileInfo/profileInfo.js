@@ -1,10 +1,9 @@
 import dayjs from "dayjs"
 import { useForm } from "react-hook-form"
-import { useDispatch, useSelector } from "react-redux"
+import { useSelector } from "react-redux"
 import classes from '../profile.module.css'
 import axios from "axios"
 import { baseUrl } from "../../../Api/Api"
-import setInfo from '../ReduxUser/userSlice'
 import ProfileStatus from "../ProfileStatus/profileStatus"
 
 const ProfileInfo = () => {
@@ -13,17 +12,14 @@ const ProfileInfo = () => {
    const date = Date.now()
    const dateJs = dayjs(date).format('YYYY')
    const Name = useSelector(state => state.user.userName)
-   const dispatch = useDispatch()
    const { register, handleSubmit, formState: { errors } } = useForm()
 
-   const url = useSelector(state => state.user.userPhoto)
    const user = useSelector(state => state.user.userName)
    const userStatus = useSelector(state => state.user.userStatus)
 
    const onSubmit = (data) => {
       data.status = userStatus
       axios.patch(`${baseUrl}/users/${user.id}`, data)
-      dispatch(setInfo(data))
    }
 
    return (

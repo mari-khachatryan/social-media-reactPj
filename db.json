@@ -6,20 +6,22 @@
       "password": "1111",
       "gender": "female"
     },
-
-      {"id": 2,
-    "name": "Vigen",
-    "password": "2222",
-    "gender": "male"
-  },
-
     {
       "id": 2,
       "name": "Vigen",
       "password": "2222",
-      "gender": "male"
+      "gender": "male",
+      "mail": "vigen.aghababyan@mail.ru",
+      "phone": "55270506",
+      "viber": "",
+      "whatsApp": "",
+      "Name": "Vigen",
+      "lastName": "Aghababyan",
+      "birthday": "1991",
+      "work": "",
+      "hobbies": "",
+      "status": "Hello"
     },
-
     {
       "id": 3,
       "name": "Narek",
@@ -32,7 +34,6 @@
       "password": "4444",
       "gender": "male"
     }
-    
   ],
   "messages": [
     {
@@ -67,8 +68,7 @@
       "author": "Mariam",
       "coment": "There is no life without nature",
       "picture": "https://media.cntraveller.com/photos/611bf0b8f6bd8f17556db5e4/1:1/w_2000,h_2000,c_limit/gettyimages-1146431497.jpg",
-      "count":0
-
+      "count": 0
     },
     {
       "id": 2,
@@ -76,8 +76,7 @@
       "author": "Sirak",
       "coment": "Nature is perfect",
       "picture": "https://cdn.pixabay.com/photo/2014/02/27/16/10/tree-276014__340.jpg",
-      "count":0
-
+      "count": 0
     },
     {
       "id": 3,
@@ -85,8 +84,7 @@
       "author": "Vigen",
       "coment": "Let`s not pollute nature",
       "picture": "https://media.cntraveler.com/photos/60596b398f4452dac88c59f8/3:2/w_3999,h_2666,c_limit/MtFuji-GettyImages-959111140.jpg",
-      "count":0
-
+      "count": 0
     },
     {
       "id": 4,
@@ -94,8 +92,7 @@
       "author": "Aram",
       "coment": "Nature is life itself",
       "picture": "https://thumbs.dreamstime.com/b/jour-de-terre-d-environnement-dans-les-mains-des-arbres-cultivant-jeunes-plantes-bokeh-verdissent-la-main-femelle-fond-tenant-l-130247647.jpg",
-      "count":0
-
+      "count": 0
     }
   ]
 }
