@@ -10,19 +10,17 @@
       "id": 2,
       "name": "Vigen",
       "password": "2222",
-      "gender": "male"
-    },
-    {
-      "id": 2,
-      "name": "Vigen",
-      "password": "2222",
-      "gender": "male"
-    },
-    {
-      "id": 2,
-      "name": "Vigen",
-      "password": "2222",
-      "gender": "male"
+      "gender": "male",
+      "mail": "vigen.aghababyan@mail.ru",
+      "phone": "55270506",
+      "viber": "",
+      "whatsApp": "",
+      "Name": "Vigen",
+      "lastName": "Aghababyan",
+      "birthday": "1991",
+      "work": "",
+      "hobbies": "",
+      "status": "Hello"
     },
     {
       "id": 3,
