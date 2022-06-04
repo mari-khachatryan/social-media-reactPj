@@ -16,9 +16,9 @@ export const LINKS = [
   },
   {
     id: '3',
-    to: "main",
-    title: "Main"
-  },
+    to: "messages",
+    title: "Messages"
+  },        
   {
     id: '4',
     to: "profile",

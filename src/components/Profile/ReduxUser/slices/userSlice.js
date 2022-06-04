@@ -19,15 +19,18 @@ const userSlice = createSlice({
       setUserPhoto: (state, { payload }) => {
          state.userPhoto = payload
       },
+
       setStatus: (state, { payload }) => {
          state.userStatus = payload
       },
+      
       setUserLogout: (state, { payload }) => {
          state.userLogout = payload
       }
    }
 })
 
+export const userSelector = state => state.user.user
 export const { setUserName, setUserPhoto, setStatus, setUserLogout } = userSlice.actions
 
 export default userSlice.reducer

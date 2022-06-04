@@ -2,7 +2,7 @@ import { memo, useEffect, useState } from "react"
 import classes from '../Profile/profile.module.css'
 import GetInfo from "./ProfileInfo/getInfo"
 import { useDispatch } from "react-redux"
-import { getPosts } from "./ReduxUser/thunk"
+import { getPosts } from "./ReduxUser/thunks/thunk"
 import { baseUrl } from "../../Api/Api"
 import ProfileInfo from "./ProfileInfo/profileInfo"
 import { OR } from "./ProfileData/profileIMG"

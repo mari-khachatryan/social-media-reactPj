@@ -5,19 +5,19 @@ import { useUserInfo } from "../contexts/UserProvider";
 import classes from "./Header.module.css";
 import { LINKS } from "../helpers/constants"
 import { useDispatch } from "react-redux";
-import { setUserLogout } from "../components/Profile/ReduxUser/userSlice";
+import { setUserLogout } from "../components/Profile/ReduxUser/slices/userSlice";
+import {v4} from 'uuid'
+import styled from "styled-components"
+import AddIcon from '@mui/icons-material/Add';
 
 
 const Header = () => {
-
   const { user, setUser } = useUserInfo()
   const dispatch = useDispatch()
 
   dispatch(setUserLogout(user))
 
-
   const LogOut = () => {
-
     localStorage.removeItem('user')
     sessionStorage.removeItem('user')
     setUser(null)
@@ -25,7 +25,7 @@ const Header = () => {
 
   return (
     <div className={classes.headerCont}>
-
+        <span>SOICAL MADIA</span>
 
       <ul className={classes.ul}>
         {
@@ -34,7 +34,7 @@ const Header = () => {
               return null
             }
             return (
-              <li key={link.id}>
+              <li key={v4()}>
                 <NavLink key={link.id} className={({ isActive }) => classNames(classes.link, {
                   [classes.active]: isActive
                 })}

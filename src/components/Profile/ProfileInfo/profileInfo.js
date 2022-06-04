@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from "react-redux"
 import classes from '../profile.module.css'
 import axios from "axios"
 import { baseUrl } from "../../../Api/Api"
-import setInfo from '../ReduxUser/userSlice'
+import setInfo from '../ReduxUser/slices/userSlice'
 import ProfileStatus from "../ProfileStatus/profileStatus"
 
 const ProfileInfo = () => {

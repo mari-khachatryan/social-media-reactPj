@@ -7,7 +7,7 @@ import { baseUrl } from "../../Api/Api"
 import { useAuthTab } from "../../contexts/AuthTabProvider"
 import { useUserInfo } from "../../contexts/UserProvider"
 import { AUTH_TABS } from "../../helpers/constants"
-import { setUserName } from "../Profile/ReduxUser/userSlice"
+import { setUserName } from "../Profile/ReduxUser/slices/userSlice"
 import classes from "./Login.module.css"
 
 
