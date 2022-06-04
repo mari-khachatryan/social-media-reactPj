@@ -1,7 +1,7 @@
 .footer-cont {
     width: 100%;
     height: 150px;
-    background-color: #35364b;
+    background-color: rgb(211 231 233);
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -24,5 +24,6 @@
 @media screen and (max-width: 1025px){
   .footer-cont{
     height: 300px;
+    margin-top: 60px;
   }
 }
