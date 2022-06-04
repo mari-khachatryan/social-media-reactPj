@@ -4,7 +4,7 @@ const initialState = {
    userName: '',
    userPhoto: null,
    userStatus: 'Hello',
-   userLogout: 'user'
+   userLogout: 'user',
 
 }
 

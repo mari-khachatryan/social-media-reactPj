@@ -1,11 +1,7 @@
-.label {
-
+.inputStyle{
+    display: flex;
+    flex-direction: column;
 }
-
-.p {
-    
-}
-
 .birthday {
     width: max-content;
     height: max-content;

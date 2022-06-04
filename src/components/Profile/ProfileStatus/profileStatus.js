@@ -1,4 +1,4 @@
-import { useCallback, useRef, useState } from "react";
+import { useRef } from "react";
 import { useDispatch } from "react-redux";
 import classes from '../profile.module.css'
 import { setStatus } from '../ReduxUser/slices/userSlice'
