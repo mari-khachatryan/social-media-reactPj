@@ -6,6 +6,18 @@
    margin-top: 3rem;
 }
 
+@media (max-width: 480px) {
+   .profile {
+      width: 100%;
+   }
+}
+
+.avInfo {
+   display: flex;
+   gap: 0.5rem;
+   margin-top: 1rem;
+}
+
 .profPhoto {
    display: flex;
    justify-content: space-around;

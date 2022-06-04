@@ -3,6 +3,7 @@ import { AUTH_TABS } from "../../helpers/constants"
 import classes from "./Register.module.css"
 import {Controller, useForm } from "react-hook-form"
 import ReactDatePicker from "react-datepicker";
+import 'react-datepicker/dist/react-datepicker.css'
 import axios from "axios"
 import { baseUrl } from "../../Api/Api"
 import { useState } from "react"
