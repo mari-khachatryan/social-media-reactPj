@@ -28,6 +28,7 @@ const Login = () => {
                 const user = res.data.find(item => item.name === data.login && item.password === data.password)
 
                 if (user) {
+                    console.log('data', data)
                     dispatch(setUserName(user))
                     if (data.save) {
                         localStorage.setItem('user', data.login)
@@ -35,7 +36,7 @@ const Login = () => {
                         sessionStorage.setItem('user', data.login)
                     }
                     setUser(data.login)
-                    navigate('../posts')
+                    navigate('/posts')
                 } else {
                     setIsLoginFailed(true)
                     console.log("User is not found")

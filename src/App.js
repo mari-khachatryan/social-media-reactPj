@@ -8,21 +8,22 @@ import Profile from './components/Profile/profile';
 import { useSelector } from 'react-redux';
 import { Suspense, lazy } from 'react';
 import HourglassBottomTwoToneIcon from '@mui/icons-material/HourglassBottomTwoTone';
+import { useUserInfo } from './contexts/UserProvider';
 
 // const Auth = lazy(() => import('./components/Auth/Auth'))
 
 
 const App = () => {
-  const user = useSelector(state => state.user.userLogout)
+  const { user } = useUserInfo()
 
   return (
       <Suspense fallback={<div>{HourglassBottomTwoToneIcon}</div>}>
           <Routes>
             <Route path='/' element={<MainLayout />}>
-              {user && <Route path='profile' element={<Profile />} />}
-              <Route path='posts' element={<Postes />} />
+              <Route path='profile' element={user ? <Profile /> : <Navigate to="/auth" />} />
+              <Route path='posts' element={user ? <Postes /> : <Navigate to="/auth" />} />
               <Route path='auth' element={<Auth />} />
-              <Route path='messages' element={<Messages />} />
+              <Route path='messages' element={user ? <Messages /> : <Navigate to="/auth" />} />
               <Route path='*' to={<Navigate path="posts" />} />
             </Route>
            </Routes>     
