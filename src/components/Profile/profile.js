@@ -6,7 +6,6 @@ import { OR } from "./ProfileData/profileIMG"
 import ProfileIMG from "./ProfileChangePhoto/changePhoto"
 
 const Profile = () => {
-
    const [edit, setEdit] = useState(false)
    const [Change, Unchange] = OR
 

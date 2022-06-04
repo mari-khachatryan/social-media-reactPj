@@ -37,7 +37,7 @@ const Postes = () => {
     //console.log(postesData);
     useEffect(()=>{},[postesData])
     return ( 
-    <div classname={classes.newPost}>
+    <div className={classes.newPost}>
 
             <p>Add your post</p>
             <div>
@@ -73,14 +73,12 @@ const Postes = () => {
                                         <button onClick={() => addComment(post.id)}>write</button>
                                     </div>
                                     <ul className={classes.decComment}>
-                                        {post.comments.map((comment, index) => {
+                                        {post.comments && post.comments.map((comment, index) => {
                                             return (
                                                 <li key={index}>{comment} </li>
                                             )
                                         })}
                                     </ul>
-
-
                                 </div>
                             </div>
                         )

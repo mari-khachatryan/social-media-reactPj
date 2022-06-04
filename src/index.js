@@ -13,6 +13,7 @@ import AuthTabProvider from './contexts/AuthTabProvider';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
+     
      <Provider store={store}>
           <BrowserRouter>
                <AuthTabProvider>
