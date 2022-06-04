@@ -11,7 +11,7 @@ const Postes = () => {
     const [comment, setComment] = useState("")
     const { user } = useUserInfo()
     const addPost=()=>{
-       postesData.push(aretext)
+       postesData.unshift(aretext)
        setAretext({...aretext,coment:''})
     }
     const countPlus=(id)=>{
@@ -32,8 +32,8 @@ const Postes = () => {
 
     //console.log(postesData);
     useEffect(()=>{},[postesData])
-    return (
-           <div className={classes.newPost}>
+    return ( 
+    <div classname={classes.newPost}>
             <p>Add your post</p>
             <div>
                {/* <h1> {aretext}</h1> */}
@@ -77,8 +77,10 @@ const Postes = () => {
                 }
             </main>
         </div>
+        
    )
             }
+            
 
 export default Postes
 

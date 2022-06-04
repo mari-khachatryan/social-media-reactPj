@@ -72,6 +72,7 @@ const onSubmit = data => {
                         <div className={classes.divLogin}>{errors?.repassword?.type && "inconsistency"}</div>
                    </div>
                 </label>
+                <div className={classes.inputStyle}>
                 <select {...register("gender")}>
                          <option value="female">female</option>
                          <option value="male">male</option>
@@ -82,6 +83,7 @@ const onSubmit = data => {
                            {errors.age && (
                            <p>You Must be older then 18 and younger then 99 years old</p>
                           )} 
+                          </div>
                 {/* <div className={classes.birthday}>
                       <section className={classes.birthday}>
                       <label>Birthday</label>

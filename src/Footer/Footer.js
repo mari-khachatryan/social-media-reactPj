@@ -10,7 +10,7 @@ function Footer() {
     </div>
     <div>
      <h1> OUR STUDIO</h1>
-     <p> Mariam,Aram,Vigen</p>
+     <p> team group</p>
     </div>
     <div>
       <h1>OUR SOCIAL NETWORK</h1>
